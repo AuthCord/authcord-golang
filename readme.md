@@ -6,7 +6,9 @@ see the <a href="https://docs.authcord.xyz">Authcord docs</a>
 
 # Installation
 simply run this command:
-``` go get github.com/AuthCord/authcord-golang```
+```
+go get github.com/AuthCord/authcord-golang
+```
 
 # Usage
 
@@ -77,6 +79,33 @@ func main() {
 ```
 
 ```Delete HWID```:
+```go
+package main
+
+import (
+	"authcord"
+	"fmt"
+)
+
+func main() {
+	// get users HWID
+	hwid := authcord.GetHWID()
+
+	// delete HWID
+	admin := authcord.NewAuthcordAdmin("YOUR_ADMIN_LEVEL_KEY")
+	res, err := admin.DeleteHWID(hwid)
+	if err != nil {
+		fmt.Println("Error deleting HWID:", err)
+		return
+	}
+	fmt.Println("Response:", res)
+
+}
+```
+
+# Authentication system examples:
+
+
 
 
  

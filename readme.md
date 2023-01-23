@@ -118,7 +118,7 @@ func main() {
 	// get users HWID
 	hwid := authcord.GetHWID()
 	// Initialize a new Authcord client with your API key
-	client := authcord.NewAuthcordClient("NE2Y3KP197A0ICUCMXJU")
+	client := authcord.NewAuthcordClient("YOUR_USER_LEVEL_KEY")
 
 	// Check the HWID of a user
 	response, err := client.CheckHWID(hwid)

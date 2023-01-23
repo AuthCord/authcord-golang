@@ -1,2 +1,1 @@
-## Work in Progress...
-# SCIENCE!
+# Authcord golang module

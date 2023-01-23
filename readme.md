@@ -105,8 +105,37 @@ func main() {
 
 # Authentication system examples:
 
+```go
+package main
 
+import (
+	"authcord"
+	"fmt"
+)
 
+func main() {
+	// get users HWID
+	hwid := authcord.GetHWID()
+	// Initialize a new Authcord client with your API key
+	client := authcord.NewAuthcordClient("NE2Y3KP197A0ICUCMXJU")
+
+	// Check the HWID of a user
+	response, err := client.CheckHWID(hwid)
+	if err != nil {
+		fmt.Println("Error checking HWID:", err)
+		return
+	}
+
+	if response == "Valid" {
+		fmt.Println("Logged in...")
+		// your code
+	} else {
+		fmt.Println("Failed to login...")
+		// your code
+	}
+
+}
+```
 
  
 

@@ -3,6 +3,8 @@ The Authcord library is a golang module that allows you to easily communicate wi
 
 (many updates to come)
 
+Find more info and get api access by <a href="https://discord.com/invite/vQ6US7MGgy">joining our Discord</a>
+
 # Documentation 
 see the <a href="https://docs.authcord.xyz">Authcord docs</a>
 

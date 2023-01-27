@@ -74,7 +74,7 @@ func main() {
 	admin := authcord.NewAuthcordAdmin("YOUR_ADMIN_LEVEL_KEY")
 	
 	// add HWID
-	res, err := admin.AddHWID(hwid)
+	res, err := admin.AddHWID(hwid, "username/ID")
 	if err != nil {
 		fmt.Println("Error adding HWID:", err)
 		return

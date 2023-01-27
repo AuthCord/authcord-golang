@@ -76,7 +76,7 @@ func (a *Authcord) CheckHWID(hwid string) (string, error) {
 	return msg, nil
 }
 
-func (a *Authcord) AddHWID(hwid string) (string, error) {
+func (a *Authcord) AddHWID(hwid, userid string) (string, error) {
 	client := &http.Client{}
 	req, err := http.NewRequest("POST", "http://api.authcord.xyz:8080/api/v1/add", nil)
 	if err != nil {
@@ -86,6 +86,7 @@ func (a *Authcord) AddHWID(hwid string) (string, error) {
 	q := req.URL.Query()
 	q.Add("hwid", hwid)
 	q.Add("key", a.ADMINKey)
+	q.Add("id", userid)
 	req.URL.RawQuery = q.Encode()
 
 	resp, err := client.Do(req)

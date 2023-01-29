@@ -1,4 +1,4 @@
-package authcord-golang
+package authcord
 
 import (
 	"encoding/json"

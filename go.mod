@@ -1,4 +1,4 @@
-module authcord
+module authcord-golang
 
 go 1.19
 

@@ -1,4 +1,4 @@
-# Authcord golang module
+# Authcord [Live Beta]: Go Module with Examples
 The Authcord library is a golang module that allows you to easily communicate with the Authcord API.
 
 (many updates to come)
